@@ -1,0 +1,23 @@
+{
+  "name": "ls",
+  "version": "0.0.1",
+  "description": "Package for communicate with the docker engine api",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadBiceps/docker-engine-access.git"
+  },
+  "keywords": [
+    "docker",
+    "docker-engine"
+  ],
+  "author": "Fabian Fischer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MadBiceps/docker-engine-access/issues"
+  },
+  "homepage": "https://github.com/MadBiceps/docker-engine-access#readme"
+}
