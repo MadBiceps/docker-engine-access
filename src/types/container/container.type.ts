@@ -1,8 +1,7 @@
-import { HostConfig } from "./host-config.type";
-import { Labels } from "./labels.type";
-import { Mount } from "./mount.type";
-import { Network } from "./network.type";
-import { Port } from "./port.type";
+import { Labels } from "../labels.type";
+import { Mount } from "../mount.type";
+import { NetworkSettings } from "./network-settings.type";
+import { Port } from "../port.type";
 
 export interface Container {
   Id: string;
@@ -17,7 +16,9 @@ export interface Container {
   Labels: Labels;
   SizeRw: number;
   SizeRootFs: number;
-  HostConfig: HostConfig;
-  NetworkSettings: Network;
+  HostConfig: {
+    NetworkMode: string,
+  };
+  NetworkSettings: NetworkSettings;
   Mounts: Mount[];
 }

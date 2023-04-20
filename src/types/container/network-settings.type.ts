@@ -1,4 +1,4 @@
-export interface Network {
+export interface NetworkSettings {
   Networks: {
     [key: string]: {
       NetworkID: string;
