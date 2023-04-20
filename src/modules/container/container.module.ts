@@ -1,10 +1,9 @@
 import axios from "axios";
-import { Container } from "../../types/container.type";
-import { map, pipe } from 'rxjs';
-import { ContainerConfig } from "../../types/container-config.type";
 import { InspectContainer } from "../../types/container/inspect.container.type";
 import { ContainerChange } from "../../types/container/container-change.type";
-import { ContainerStats } from "../../types/container-stats.type";
+import { ContainerConfig } from "../../types/container/container-config.type";
+import { Container } from "../../types/container/container.type";
+import { ContainerStats } from "../../types/container/container-stats.type";
 
 /**
  * List containers
