@@ -1,0 +1,82 @@
+export interface ImageInfo {
+  Id: string;
+  RepoTags: string[];
+  RepoDigests: string[];
+  Parent: string;
+  Comment: string;
+  Created: string;
+  Container: string;
+  ContainerConfig: {
+    Hostname: string;
+    Domainname: string;
+    User: string;
+    AttachStdin: boolean;
+    AttachStdout: boolean;
+    AttachStderr: boolean;
+    ExposedPorts: {};
+    Tty: boolean;
+    OpenStdin: boolean;
+    StdinOnce: boolean;
+    Env: string[];
+    Cmd: string[];
+    Healthcheck: {};
+    ArgsEscaped: boolean;
+    Image: string;
+    Volumes: {};
+    WorkingDir: string;
+    Entrypoint: string[];
+    NetworkDisabled: boolean;
+    MacAddress: string;
+    OnBuild: string[];
+    Labels: {};
+    StopSignal: string;
+    StopTimeout: number;
+    Shell: string[];
+  };
+  DockerVersion: string;
+  Author: string;
+  Config: {
+    Hostname: string;
+    Domainname: string;
+    User: string;
+    AttachStdin: boolean;
+    AttachStdout: boolean;
+    AttachStderr: boolean;
+    ExposedPorts: {};
+    Tty: boolean;
+    OpenStdin: boolean;
+    StdinOnce: boolean;
+    Env: string[];
+    Cmd: string[];
+    Healthcheck: {};
+    ArgsEscaped: boolean;
+    Image: string;
+    Volumes: {};
+    WorkingDir: string;
+    Entrypoint: string[];
+    NetworkDisabled: boolean;
+    MacAddress: string;
+    OnBuild: string[];
+    Labels: {};
+    StopSignal: string;
+    StopTimeout: number;
+    Shell: string[];
+  };
+  Architecture: string;
+  Variant: string;
+  Os: string;
+  OsVersion: string;
+  Size: number;
+  VirtualSize: number;
+  GraphDriver: {
+    Name: string;
+    Data: {};
+  };
+  RootFS: {
+    Type: string;
+    Layers: string[];
+  };
+  Metadata: {
+    LastTagTime: string;
+  };
+}
